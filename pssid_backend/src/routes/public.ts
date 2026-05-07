@@ -3,7 +3,7 @@
 // Verification and trust score returned as clearly separate objects.
 
 import { FastifyInstance } from 'fastify';
-import { db }             from '../db/client';
+import { db }             from '../db/client.js';
 
 async function getClient(apiKey: string) {
   return db.queryOne(

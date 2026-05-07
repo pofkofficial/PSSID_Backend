@@ -4,9 +4,9 @@ import cors             from '@fastify/cors';
 import helmet           from '@fastify/helmet';
 import rateLimit        from '@fastify/rate-limit';
 import { config }       from 'dotenv';
-import { verificationRoutes } from './routes/verification';
-import { trustRoutes }        from './routes/trust';
-import { publicRoutes }       from './routes/public';
+import { verificationRoutes } from './routes/verification.js';
+import { trustRoutes }        from './routes/trust.js';
+import { publicRoutes }       from './routes/public.js';
 import { FastifyError } from 'fastify';
 
 config();

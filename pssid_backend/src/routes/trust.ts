@@ -5,7 +5,7 @@
 
 import { FastifyInstance } from 'fastify';
 import { z }              from 'zod';
-import { db }             from '../db/client';
+import { db }             from '../db/client.js';
 
 // ── Event definitions ─────────────────────────────────────────────────────────
 
