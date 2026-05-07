@@ -5,7 +5,7 @@
 
 import { FastifyInstance } from 'fastify';
 import { z }              from 'zod';
-import crypto             from 'crypto.js';
+import crypto             from 'crypto';
 import { db }             from '../db/client.js';
 import { verifyEnrollment, verifyChallenge } from '../crypto/verify.js';
 
