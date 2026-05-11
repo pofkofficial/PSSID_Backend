@@ -7,6 +7,7 @@ import { config }       from 'dotenv';
 import { verificationRoutes } from './routes/verification.js';
 import { trustRoutes }        from './routes/trust.js';
 import { publicRoutes }       from './routes/public.js';
+import { recoveryRoutes } from './routes/recovery.js';
 import { FastifyError } from 'fastify';
 
 config();
@@ -38,6 +39,7 @@ await app.register(rateLimit, {
 await app.register(verificationRoutes);
 await app.register(trustRoutes);
 await app.register(publicRoutes);
+await app.register(recoveryRoutes);
 
 app.setErrorHandler((error: FastifyError, _req, reply) => {
   app.log.error(error);
